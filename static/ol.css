@@ -11,18 +11,21 @@
 }
 
 .ol-scale-line {
-  background: rgba(0,60,136,0.3);
+  right: 43px;
+  left: auto;
+  bottom: 1vmin;
+  background: transparent;
+  padding: 0;
   border-radius: 4px;
-  bottom: 8px;
-  left: 8px;
-  padding: 2px;
   position: absolute;
 }
 .ol-scale-line-inner {
-  border: 1px solid #eee;
+  background-color: rgba(255,255,255,0.7);
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.7em;
+  border: 1px solid #000;
   border-top: none;
-  color: #eee;
-  font-size: 10px;
   text-align: center;
   margin: 1px;
   will-change: contents, width;
