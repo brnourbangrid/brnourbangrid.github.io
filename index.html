@@ -1,8 +1,5 @@
-<!doctype html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,127 +11,104 @@
 
   gtag('config', 'UA-115988497-1');
 </script>
-
-<!--
-••••••••••••••••••••••••
-
-Powered by Type & Grids™
-www.typeandgrids.com
-
-••••••••••••••••••••••••
--->
-
+<link rel="shortcut icon" href="favicon.ico">
 <title>Brno Urban Grid</title>
-<meta name="description" content="BrnoUrbanGridIntro">
-<meta name="author" content="BrnoUrbanGrid">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- CSS
-================================================================================================= -->
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/themes/type_05.css">
-<link rel="stylesheet" href="css/themes/color_01.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/mediaqueries.css" type="text/css" media="all">
+<script src="js/libs/jquery.1.9.0.min.js"></script>
+<script src="js/libs/jquery-mobilemenu.min.js"></script>
 <!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+  <script src="js/libs/ie/css3-mediaqueries.min.js"></script>
+  <script src="js/libs/ie/ie9.js"></script>
+  <script src="js/libs/ie/html5shiv.min.js"></script>
+  <![endif]-->
 
-<!-- Favicons
-================================================================================================= -->
-<link rel="shortcut icon" href="images/favicons/favicon.ico">
-<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-
-<!-- JS
-================================================================================================= -->
-<script src="js/libs/modernizr.min.js"></script>
-<script src="js/libs/jquery-1.8.3.min.js"></script>
-<script src="js/libs/jquery.easing.1.3.min.js"></script>
-<script src="js/libs/jquery.fitvids.js"></script>
-<script src="js/script.js"></script>
-
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+if(window === window.top) {
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#838391"
+        },
+        "button": {
+          "background": "#4b81e8"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Pro správnou funkci tohoto webu a jeho další zlepšování používáme soubory cookies.",
+        "dismiss": "Rozumím",
+        "link": "Více",
+        "href": "https://policies.google.com/privacy/partners?hl=cs"
+      }
+    });
+  });
+}
+</script>
 </head>
 <body>
-
-<!-- Write preloader to page - this allows the site to load for users with JS disabled -->
-<script type="text/javascript">
-	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
-</script>
-
-<div class="container">
-	
-	<!-- Header begins ========================================================================== -->
-	<header class="sixteen columns">
-		<div id="logo">
-			
-		<img src="images/BUGlogo3.png" width="150" height="149" alt="Logo" /><!--
-			<img src="images/BUGlogo.png" width="150" height="149" alt="Logo" />
-			-->
-		</div> 
-    		<nav>
-        <div id="overview">
-        <h4><strong>GRIDOVÁ  STATISTIKA  MĚSTA  BRNA  A  BRNĚNSKÉ  METROPOLITNÍ OBLASTI</strong></h4>
-		</div></nav> 
-		
-	</header>
-	<!-- Header ends ============================================================================ -->
-	
-	<!-- Work page begins ======================================================================= -->
-	<div id="work">
-	  <div id="overview" class="sixteen columns">
-    <hr />
-		 			 <p><h5><strong>AKTUALITY</strong></h5></p>
-           <ul>
-        <li><em>12/3/2018<br>Byla spuštěna testovací verze Brno Urban Gridu. V této chvíli obsahuje jednu aktivní datovou vrstvu - Obvykle bydlící obyvatelstvo.</em></li>
-					
-          </ul>
-          <hr />          
-          
-		
-		
-		  <p><h4><strong><span style="color: #3C98D1">DATOVÉ VRSTVY</span></strong></h4></p>
-      </div>
-     <div class="eight columns" id="col1"> 
-      <ul>
-      <li><em><p><a href="https://brnourbangrid.cz/map/"># OBVYKLE BYDLÍCÍ OBYVATELSTVO | 2011 | Brněnská metropolitní oblast</a></p></em></li>
-      </ul>
-      </div><!-- col1 -->     
-		
-		
-		<!-- Even numbered projects are dynamically moved into this second column via JS -->
-		<div class="eight columns" id="col2">
-		</div>
-	
-	</div>
-	<!-- Work page ends ========================================================================= -->
-	   <div id="overview" class="sixteen columns">
-		 			<hr />
-   	<p><h5>Co je to Brno Urban Grid?</h5></p>
-    <p>Brno Urban Grid (BUG) je aplikací, která umožnuje jednoduchou vizualizaci a analýzu různých typů prostorových dat v rozsahu <a href="http://iti.brno.cz/" target="_blank">Brněnské metropolitní oblasti</a>. Jde o přímočarý a otevřený nástroj pro rychlou a přehlednou analýzu prostorové situace. Aplikace využívá čtvercovou síť o velikosti buňky 250 x 250 metrů, která je položena nad OpenStreet mapou metropolitní oblasti. Do čtvercových buněk mohou být přepočítávány různé typy dat popisujících bodové, liniové či plošné prostorové jevy, jako jsou například počty bydlících obyvatel, podíly zastavěného území či prodejní plocha maloobchodních prodejen. Hlavními charakteristikami aplikace je otevřenost, nenáročnost pro uživatele a interpretační názornost.
-					</p>
-    <p><h5>Proč čtvercová síť?</h5></p>
-    <p>Výhodou použití čtvercového gridu je možnost prezentace a analýzy dat v pevně definovaných, stabilních a vzájemně dobře porovnatelných prostorových jednotkách. Použití gridu řeší zkreslení vzniklá nestejnou velikostí či změnami hranic obvyklých statistických prostorových jednotek. Jednotlivé buňky mohou být plošně seskupovány, tak aby co nejlépe pokryly zvolené území. Jen pro představu – území Brněnské metropolitní oblasti je pokryto více než 28 000 čtvercovými buňkami 250 x 250 metrů. Použití gridu je v souladu se současnými aktivitami národních statistických úřadů a Eurostatu, které směřují k hlubšímu rozvíjení gridové statistiky.</p>
-		<p><h5>Kdo aplikaci vyvíjí a spravuje?</h5></p>
-    <p>Aplikace je vyvíjena kartografy, informatiky a sociálními geografy společnosti <a href="http://www.altimapo.cz" target="_blank">Altimapo</a>, která je spin-offem Masarykovy univerzity v Brně. Cílem pracovního týmu je nejen vývoj a hladký provoz aplikace, ale také aktuálnost, tematický rozsah a kvalita vizualizovaných dat. Velká pozornost je proto věnována úpravám zdrojových dat a způsobům jejich přenosu do čtvercového gridu.
-					</p>
-    
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+    <img src="images/logob.png" alt="logo" style="float: left;" width="60" height="60">
+      <h1><a href="/">BRNO URBAN GRID</a></h1>
+      <h2>GRIDOVÁ STATISTIKA MĚSTA BRNA A BRNĚNSKÉ METROPOLITNÍ OBLASTI</h2>
     </div>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="topnav">
+    <ul class="clear">
+      
+      <li class="spec"><a href="/">DOMŮ</a></li>
+      <li><a href="/map/">APLIKACE BRNO URBAN GRID</a></li>
+      <li><a href="https://data.brno.cz" target="_blank">DATA.BRNO ↪</a></li>
+      <li><a href="http://altimapo.cz" target="_blank">ALTIMAPO ↪</a></li>
+     
+      
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- content -->
+<div class="wrapper row3">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <div class="full_width clear">
+      
+      <div class="two_fifth first"><p><b><a href="/map/">Brno Urban Grid</a></b> je jednoduchou webovou aplikací, která umožňuje rychlou vizualizaci různých typů prostorových dat v rozsahu území města Brna či Brněnské metropolitní oblasti. Nejedná se o složitý analytický systém, ale o přímočarý a otevřený nástroj pro přehlednou analýzu prostorové situace.</p> Aplikace využívá čtvercovou síť o velikosti buňky 250 x 250 metrů, která je položena nad OpenStreet mapou metropolitní oblasti. Do čtvercových buněk mohou být načítány různé typy dat popisující bodové, liniové či plošné prostorové jevy, jako jsou například počty bydlících obyvatel, podíly zastavěného území či prodejní plocha maloobchodních prodejen.</p> Hlavními charakteristikami aplikace je otevřenost, rychlost, nenáročnost pro uživatele a interpretační názornost. Významnou přidanou hodnotou je také aktuálnost, tematický rozsah a kvalita zobrazovaných informací. Veřejnost, ale i urbanisté, dopravní plánovači, analytici či novináři získávají přístup k prostorovým datům bez nutnosti práce s často složitými geografickými informačními systémy.</div>
+      <div class="one_fifth"><p><a href="/map/"><img src="images/BUG_odkaz.png" alt="aplikace BUG" style="float: left;" width="80" height="80"></a></div>
+      <div class="two_fifth"><p>Použití čtvercového gridu umožňuje prezentovat a analyzovat agregovaná data v pevně definovaných, stabilních a plošně stejně velkých prostorových jednotkách. Gridová síť tak řeší možná zkreslení a vzniklá nestejnou velikostí či změnami hranic obvyklých statistických prostorových jednotek (jako jsou například obce, městské části či základní sídelní jednotky).</p> Jednotlivé buňky gridu mohou být vybírány a seskupovány tak, aby co nejlépe pokryly zvolené území. Jen pro představu – území Brněnské metropolitní oblasti je pokryto více než 28 000 čtvercovými buňkami 250 x 250 metrů, území města Brna přibližně 4 000 buňkami, městská část Brno-Kohoutovice 75 buňkami a území brněnské Městské památkové rezervace asi 25 buňkami. </p>Použití gridu je zcela v souladu se současnými aktivitami národních statistických úřadů a Eurostatu, které směřují k širší podpoře a rozvoji gridové statistiky. Motivací je lepší srovnatelnost prostorových informací a jejich částečná nezávislost na proměnlivých administrativních a politických územních jednotkách.</div>
+      </div>
+      </div>
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <p>   
+    <div class="full_width clear"> 
+      <h3><p style="border-bottom: 1px solid black">VÝVOJ BUGu</p></h3>
+      
+     <div class="full_width clear"> 
+     
+     <div class="six_sixth">Aplikace je vyvíjena a provozována společností Altimapo, která je spin-offem Masarykovy univerzity v Brně. Na vývoji aplikace se podílejí zejména kartografové, informatici a sociální geografové s cílem zajistit nejen technicky bezproblémový provoz, ale také odpovídající kvalitu datových vrstev. Velká pozornost je proto věnována přípravě datových podkladů a způsobům jejich přenosu do čtvercového gridu. Uživatel by měl mít vždy k dispozici údaje o zdroji a aktuálnosti předkládaných datových vrstev.</p> Připomínky a komentáře rádi přivítáme na adrese <a href="mailto:altimapo@altimapo.cz">altimapo@altimapo.cz</a></div>
+    </div>
+  </div>
   
-	<!-- Footer begins ========================================================================== -->
-	<footer class="sixteen columns">
-		<hr />
-    		<ul id="footerLinks">
-        <li><img src="images/logo1.png" alt="Altimapo" /></li>
-			<li>&copy; 2018 Altimapo. </li>
-			<li><a href="mailto:altimapo@altimapo.cz">altimapo@altimapo.cz</a></li>
-			<li><a href="http://www.altimapo.cz" target="_blank">www.altimapo.cz</a></li>
-			<!--Notice: The "Powered by Type & Grids" link in the footer is required in the Free version. Upgrade to the Pro version if you would like to remove it.-->
-			<li><a href="http://www.typeandgrids.com" target="_blank">Powered by Type &amp; Grids</a></li>
-		</ul>
-	</footer>
-	<!-- Footer ends ============================================================================ -->
-		
-</div><!-- container -->
+</div>
+<!-- Footer -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 Altimapo - All Rights Reserved - <a href="/">brnourbangrid.cz</a></p>
+    <p class="fl_right">Website by <a href="http://altimapo.cz"><img src="images/logo_alt.png" alt="Altimapo" style="/*float: left;*/" width="50" height="50"></a> & <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>.</p>
+  </footer>
+</div>
 </body>
 </html>
